@@ -1,0 +1,15 @@
+
+body {
+    font-family: "fortnite";
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    box-shadow: none !important;
+}
+
+label {
+    font-weight: bold;
+}

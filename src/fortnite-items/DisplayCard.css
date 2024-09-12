@@ -1,0 +1,8 @@
+.card {
+    width: 18rem;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+    transition: 0.45s;
+}
