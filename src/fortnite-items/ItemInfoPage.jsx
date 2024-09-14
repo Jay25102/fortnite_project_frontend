@@ -117,7 +117,7 @@ function ItemInfoPage() {
             <h1>{name}</h1>
             <img src={src}/>
             <div>
-                Cost: {price} <img className="vbuck" src="frontend/src/assets/vbuck.png"/>
+                Cost: {price} <img className="vbuck" src="frontend/src/assets/vbuck.png" alt=" vbucks"/>
             </div>
             {description}
             <div>
