@@ -1,5 +1,6 @@
 import axios from "axios";
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+// const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = "https://fortnite-project-backend.onrender.com";
 
 class backendApi {
     static token;
@@ -25,6 +26,7 @@ class backendApi {
 
     static async signup(data) {
         let res = await this.request(`auth/register`, data, "post");
+        console.log(data);
         return res.token;
     }
 

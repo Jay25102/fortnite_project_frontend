@@ -30,6 +30,7 @@ function Register({signup}) {
 
     async function handleSubmit(e) {
         e.preventDefault();
+        // console.log(`formdata= ${formData.username}`)
         let result = await signup(formData);
         console.log(result);
         if (result.success) {

@@ -47,7 +47,9 @@ function App() {
    */
   async function signup(signupData) {
     try {
+      console.log(`signupData= ${signupData}`);
       let token = await backendApi.signup(signupData);
+      
       setToken(token);
       return { success: true };
     } catch (errors) {

@@ -107,6 +107,11 @@ function ItemInfoPage() {
         }
     }
 
+    let favorites;
+    if (activeUser) {
+        favorites = (<button onClick={addToFavorites}>Add to Favorites</button>)
+    }
+
     return (
         <div>
             <h1>{name}</h1>
@@ -122,7 +127,8 @@ function ItemInfoPage() {
                 Type: {type}
             </div>
             {granted}
-            <button onClick={addToFavorites}>Add to Favorites</button>
+            {favorites}
+            
         </div>
     )
 }
