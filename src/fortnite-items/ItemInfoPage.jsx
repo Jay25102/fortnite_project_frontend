@@ -108,8 +108,8 @@ function ItemInfoPage() {
     }
 
     let favorites;
-    if (activeUser) {
-        favorites = (<button onClick={addToFavorites}>Add to Favorites</button>)
+    if (activeUser && !location.state.isCompendium) {
+        favorites = (<button onClick={addToFavorites}>Purchased!</button>)
     }
 
     return (

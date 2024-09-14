@@ -59,6 +59,7 @@ function Compendium() {
                             imgURL={val.images.full_background}
                             redirectURL={val.mainId || val.id}
                             itemInfo={val}
+                            isCompendium={true}
                         />
                 ))}
             </div>

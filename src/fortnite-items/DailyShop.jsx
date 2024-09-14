@@ -64,6 +64,7 @@ function DailyShop() {
                         imgURL={val.displayAssets[0].full_background}
                         redirectURL={val.mainId}
                         itemInfo={val}
+                        isCompendium={false}
                     />
                 ))}
             </div>

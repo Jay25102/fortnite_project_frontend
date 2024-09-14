@@ -6,14 +6,15 @@ import "./DisplayCard.css";
  * Card component for displaying fortnite items on the webpage.
  * Clicking on a DisplayCard will redirect to the item's ItemInfoPage
  */
-function DisplayCard({imgURL, redirectURL, itemInfo}) {
+function DisplayCard({imgURL, redirectURL, itemInfo, isCompendium}) {
     const navigate = useNavigate();
     // console.debug("DisplayCard", "imgURL=", imgURL, "redirectURL=", redirectURL, "itemInfo=", itemInfo);
 
     function navToItemInfo() {
         navigate(`/item/${redirectURL}`, {
             state: {
-                itemInfo: itemInfo
+                itemInfo: itemInfo,
+                isCompendium: isCompendium
             }
         });
     }

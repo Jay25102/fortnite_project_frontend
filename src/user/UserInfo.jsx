@@ -31,7 +31,7 @@ function UserInfo() {
 
     return (
         <div>
-            <div>Favorited Items: </div>
+            <div>Purchased Items: </div>
             {favoritedItems.map((val, idx) => (
                     <DisplayCard 
                         key={idx} 
